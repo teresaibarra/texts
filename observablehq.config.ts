@@ -1,3 +1,4 @@
 export default {
-  title: "Text Analysis"
+  title: "Analyzing my text messages with my ex-boyfriend",
+  footer: ""
 };

@@ -1,10 +1,10 @@
 ---
 theme: dashboard
-title: Analyzing my texts messages with my ex-boyfriend
+title: Analyzing my text messages with my ex-boyfriend
 
 ---
 
-# Analyzing my texts messages with my ex-boyfriend
+# Analyzing my text messages with my ex-boyfriend
 
 ```js
 const derivedAllMessages = FileAttachment("data/derived_all_messages.json").json();
@@ -13,14 +13,14 @@ const topicGroups = FileAttachment("data/topic_groups.json").json();
 const labelledTopics = FileAttachment("data/topics.json").json();
 const longestMessages = FileAttachment("data/longest_messages.json").json();
 
-const LAST_RELATIONSHIP_MONTH = new Date(2016, 9);
+const lastMonthOfRelationship = new Date(2016, 9);
 ```
-<h3>by <a  href="https://teresaibarra.com/">Teresa Ibarra</a></h3>
+<h3>by <a href="https://teresaibarra.com/">Teresa Ibarra</a></h3>
 
 <p>&nbsp;</p>
 
 ## Message Frequency
-We got together in the summer of 2015 and broke up in the spring of 2016.
+We began dating in the summer of 2015 and broke up in the spring of 2016.
 
 <div class="grid grid-cols-4">
   <div class="card">
@@ -28,7 +28,7 @@ We got together in the summer of 2015 and broke up in the spring of 2016.
     <span class="big">${derivedAllMessages.filter((d) => d.sender === "Teresa Ibarra").length}</span>
   </div>
   <div class="card">
-    <h2>Total messages from him</h2>
+    <h2>Total messages from my ex</h2>
     <span class="big">${derivedAllMessages.filter((d) => d.sender === "My ex").length}</span>
   </div>
 </div>
@@ -36,12 +36,9 @@ We got together in the summer of 2015 and broke up in the spring of 2016.
 <!-- Plot of message frequency -->
 
 ```js
-
-console.log(topicGroups)
-
 function messageFrequencyPlot(data, { width } = {}) {
   return Plot.plot({
-    title: "Message count up until last contact",
+    title: "Message count over time",
     x: { axis: null },
     fx: { type: "utc", interval: "month", label: "month" },
     y: { grid: true, label: "message count" },
@@ -73,7 +70,7 @@ function messageFrequencyPlot(data, { width } = {}) {
 function sentimentPlot(data, { width } = {}) {
   const dataWithCutoff = data.filter(item => {
     const timestamp = item.timestamp;
-    return timestamp < LAST_RELATIONSHIP_MONTH.getTime();
+    return timestamp < lastMonthOfRelationship.getTime();
   });
 
   return Plot.plot({
@@ -101,7 +98,8 @@ function sentimentPlot(data, { width } = {}) {
 
 ## Sentiment Analysis
 
-"Sentiment analysis is a natural language processing (NLP) technique used to determine whether data is positive, negative or neutral." This was run on every text message exchanged during our relationship. The compound score (sum of the negative and positive score) is shown below.
+Sentiment analysis is the process of computationally identifying and categorizing the emotions expressed in a piece of text as positive, negative, or neutral. 
+[NLTK's VADER tools](https://www.nltk.org/_modules/nltk/sentiment/vader.html) were run on every message that contained text. The following graphs represent the [compound score](https://github.com/cjhutto/vaderSentiment?tab=readme-ov-file#about-the-scoring) over time.
 
 <div class="grid grid-cols-1">
   <div class="card">
@@ -129,20 +127,20 @@ function sentimentPlot(data, { width } = {}) {
 
 ## Longest Messages
 
-These were the longest messages we sent to each other. 
+These were the longest messages we ever sent to each other. 
 
-I hoped this would be something spicy like a long, drawn-out argument, but it turns out I just needed help with my homebrew configuration and he was geeking out about his philosophy meetup.
+In a way I hoped this would be something spicy like a long, drawn-out argument. But it turns out I just needed help with configuring Homebrew and he was geeking out about his philosophy meetup.
 
 
 <div class="grid grid-cols-2">
   <div class="card">
     <h2>Longest message from Teresa</h2>
-    <i>This seems to be terminal output from an incorrect homebrew installation of Python. <br /><br /></i>
+    <i>These seem to be warnings from terminal output due to issues in my Homebrew configuration. <br /><br /></i>
     <pre style="height: 80ex; overflow-y: scroll;">${longestMessages["Teresa Ibarra"]}</pre>
   </div>
   <div class="card">
     <h2>Longest message from him</h2>
-    <i>This is a list of questions that are posed for a philosophy meetup group he was attending. <br /><br /></i>
+    <i>This is a list of questions for a philosophy meetup group he was attending. <br /><br /></i>
     <pre>>${longestMessages["My ex"]}</pre>
   </div>
 </div>
@@ -151,7 +149,7 @@ I hoped this would be something spicy like a long, drawn-out argument, but it tu
 
 ## Key Words
 
-This is how often we used these words in our messages. 
+The following graphs represent how often we sent specific words to each other.
 
 ```js
 function keywordPlot(data, { width } = {}, title) {
@@ -163,7 +161,7 @@ function keywordPlot(data, { width } = {}, title) {
     color: { legend: true },
     width,
     marks: [
-      Plot.barY(aggregateDataCount(data, LAST_RELATIONSHIP_MONTH), {
+      Plot.barY(aggregateDataCount(data, lastMonthOfRelationship), {
         x: "sender",
         y: "count",
         fx: d => d3.utcWeek(d.timestamp),
@@ -200,7 +198,9 @@ function keywordPlot(data, { width } = {}, title) {
 
 ## Topics over time
 
-The following graphs depicts 40 topics found in our text messages and a topic was predicted for each message. The topics were identified with a Biterm topic model. Topics are grouped by theme. A list of words are associated with each topic and are ordered from most to least relevance and I have added a possible interpretation. 
+I trained a [Biterm topic model](https://xiaohuiyan.github.io/paper/BTM-WWW13.pdf) to identify 40 recurring topics in our text messages. The model then assigned a topic to every message containing text. The following graphs describe the frequency of a given topic over time.
+
+The model describes a given topic as a list of words. The list is ordered from most to least relevance. I added a possible interpretation of this list for each topic. 
 
 ```js
 function topicPlot(data, { width } = {}, index, teresaMessages, exMessages) {
@@ -214,7 +214,7 @@ function topicPlot(data, { width } = {}, index, teresaMessages, exMessages) {
     color: { legend: true },
     width,
     marks: [
-      Plot.barY(aggregateDataCount(data, LAST_RELATIONSHIP_MONTH), {
+      Plot.barY(aggregateDataCount(data, lastMonthOfRelationship), {
         x: "sender",
         y: "count",
         fx: d => d3.utcWeek(d.timestamp),
@@ -288,48 +288,49 @@ function aggregateDataCount(data, endDate) {
 }
 ```
 
-## FAQ & Fun tidbits
+## FAQ
 <p>&nbsp;</p>
-
-#### Q: How did you get the messages?
-These messages were sent over Facebook Messenger. Facebook allows you to download all of the messages you've ever sent, ever, in JSON format. I processed these files with Python. 
-
-#### Q: How did you perform sentiment analysis?
-I used NLTK's SentimentIntensityAnalyzer Python module on every text message.
-
-#### Q: How did you get the topics?
-I trained and ran the Biterm topic model on all of my text messages, then had it return the most likely topics for each message.
-
-#### Q: What was it like to show your friends this?
-Interestingly enough, my friends have expressed surprise at the data and how much it didn't align with their perception of the relationship.
 
 #### Q: Why did you do this?
 I thought it would be funny.
 
-#### Q: Where did this idea come from?
-I conceived the idea for this in the era where large tech companies (social media) would hoard data, and it wasn't clear what they'd do with it. I wanted to explore the ways in which companies that have our data could analyze who we were from our data, how data we didn't think much of could reveal so much about ourselves.
+#### Q: How did you get the messages?
+These messages were sent over Facebook Messenger. Facebook allows you to download all of the messages you've ever sent, ever, as JSON files. I processed these files with Python. You can see the scripts I wrote for processing in [this folder](https://github.com/teresaibarra/texts/tree/main/models).
 
-Data is biased. The collection, the processing, and the presentation is all biased. I feel it's difficult to understand how this manifests in practice, and the questions that you ask about my biases in this project is the same scrunity we should hold towards all data and AI/ML tools.
+#### Q: How did you perform sentiment analysis?
+I used [NLTK's VADER tools](https://www.nltk.org/_modules/nltk/sentiment/vader.html) on every text message. You can see how I did this [here](https://github.com/teresaibarra/texts/blob/main/models/data_processing/add_sentiment.py).
+
+#### Q: How did you get the topics?
+I trained a [Biterm topic model](https://github.com/xiaohuiyan/BTM) on all of my text messages and had it identify the most likely topic for each message. You can see how I trained and ran the model [here](https://github.com/teresaibarra/texts/tree/main/models/btm_files).
+
+#### Q: What was it like to show your friends this?
+One friend in particular was surprised by the data and how it didn't align with their perception of the relationship.
+
+#### Q: Where did this idea come from?
+I came up with the idea for this in 2020. Large social media companies hoards data and at the time, it wasn't clear to me what they'd do with it. I wanted to explore the ways in which private companies could analyze who we were from our data. We don't think so much about the data that we consent to sharing and it's hard to conceptualize how data can reveal so much.
+
+Data are biased. The existence, expression, collection, and the presentation of data are all biased. I hope that you question how I actually relate to this data and how I made decisions on this project. I believe we should apply the same scrunity towards all data analysis, artificial intelligence, and machine learning tools.
 
 #### Q: It's very personal to share this. Why did you do this?
 that's art babey!!
 
 #### Q: That's cool! I wonder what it'd be like to run it on my text messages.
-I can't say I recommend it -- it was surreal and uncomfortable to read through messages from a decade ago. Programmatic analysis can reveal things about yourself, your partner, and your relationship that you may not want to know or accept.
+I can't say I recommend it -- it was surreal and uncomfortable to read through messages from a decade ago. Programmatic analysis can reveal things about yourself, your partner, and your relationship that you may not want to know or accept. It's also easy to intentionally or unintentionally manipulate data to favor a narrative.
 
-#### Q: Could you release this so that people could do this themselves?
-It's doable to release the Javascript-only graphs to a wider audience. However, the topic model is finely tuned to my data and would not transfer accurately to any one person's texts.
+#### Q: Can you release this so that people could do this themselves?
+I'm considering it. However, the topic model is custom to my data and would not transfer accurately to anyone else's texts. 
 
-#### Q: Was this carthartic?
-Not in the way I expected. I wanted to do this project since 2021 and I've told people about it for years. I felt bad that I was never able to start it. Completing this at Recurse Center gave me the release from the shame of not completing it.
+#### Q: Was this cathartic?
+Not in the way I expected. I wanted to complete this project for a long time and I've told people about it for years. I felt bad that I was never able to do it. Dedicating time to work on this at [Recurse Center](https://www.recurse.com/) released me from that shame.
 
 <p>&nbsp;</p>
 
 #### Fun tidbit
-In training the topic model, I had to get rid of words that occurred too frequently to the point where it would negatively influence the accuracy of the topics. Some of them were 'like', 'think', and 'really', which are fitting for conversations between two Californian 17 year olds.
+When I was training the topic model, some words occurred so frequently that it would negatively influence topic accuracy. Some of the words were 'like', 'think', and 'really', which are fitting for text messages between two Californian 17 year olds.
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
+This project was coded and visualized by [Teresa Ibarra](https://teresaibarra.com/).
 <script async defer src="https://www.recurse-scout.com/loader.js?t=cebb8f1aa2412719dcf855f950ab254c"></script>
 <div class="rc-scout"></div>
