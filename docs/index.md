@@ -310,6 +310,9 @@ I used [Observable Plot](https://observablehq.com/plot/) to make the charts. Thi
 #### Q: What was it like to show your friends this?
 One friend in particular was surprised by the data and how it didn't align with their perception of the relationship.
 
+#### Q: Does your ex know that you did this?
+He does! He was the first person I talked to about it. He thought that this turned out amazing... (ಥ﹏ಥ)
+
 #### Q: Where did this idea come from?
 I came up with the idea for this in 2020. Large social media companies hoards data and at the time, it wasn't clear to me what they'd do with it. I wanted to explore the ways in which private companies could analyze who we were from our data. We don't think so much about the data that we consent to sharing and it's hard to conceptualize how data can reveal so much.
 
