@@ -1,0 +1,7 @@
+.DS_Store
+dist/
+docs/.observablehq/cache/
+docs/real_data
+node_modules/
+models/data
+to-do.md

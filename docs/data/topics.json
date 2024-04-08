@@ -1,0 +1,895 @@
+[
+    {
+        "index": 3,
+        "p(z)": 0.0292557,
+        "interpretation": "Developing games in high school",
+        "words": [
+            {
+                "word": "school",
+                "probability": 0.0258745
+            },
+            {
+                "word": "game",
+                "probability": 0.0219656
+            },
+            {
+                "word": "high",
+                "probability": 0.0140546
+            },
+            {
+                "word": "new",
+                "probability": 0.0132169
+            },
+            {
+                "word": "video",
+                "probability": 0.0113555
+            },
+            {
+                "word": "message",
+                "probability": 0.0112625
+            },
+            {
+                "word": "friend",
+                "probability": 0.0105179
+            },
+            {
+                "word": "night",
+                "probability": 0.0100525
+            },
+            {
+                "word": "made",
+                "probability": 0.0100525
+            },
+            {
+                "word": "together",
+                "probability": 0.00986641
+            }
+        ]
+    },
+    {
+        "index": 16,
+        "p(z)": 0.0285299,
+        "interpretation": "Discussing programming and technologies",
+        "words": [
+            {
+                "word": "code",
+                "probability": 0.0177515
+            },
+            {
+                "word": "page",
+                "probability": 0.0144114
+            },
+            {
+                "word": "run",
+                "probability": 0.0137433
+            },
+            {
+                "word": "email",
+                "probability": 0.0124073
+            },
+            {
+                "word": "use",
+                "probability": 0.0123118
+            },
+            {
+                "word": "file",
+                "probability": 0.0119301
+            },
+            {
+                "word": "computer",
+                "probability": 0.009926
+            },
+            {
+                "word": "app",
+                "probability": 0.00983057
+            },
+            {
+                "word": "data",
+                "probability": 0.0096397
+            },
+            {
+                "word": "without",
+                "probability": 0.00925797
+            }
+        ]
+    },
+    {
+        "index": 14,
+        "p(z)": 0.0250321,
+        "interpretation": "Coordinating time to hang out when we were both living in San Francisco",
+        "words": [
+            {
+                "word": "night",
+                "probability": 0.0262066
+            },
+            {
+                "word": "work",
+                "probability": 0.0225096
+            },
+            {
+                "word": "francisco",
+                "probability": 0.0189212
+            },
+            {
+                "word": "san",
+                "probability": 0.0183776
+            },
+            {
+                "word": "free",
+                "probability": 0.0182688
+            },
+            {
+                "word": "friday",
+                "probability": 0.0155504
+            },
+            {
+                "word": "family",
+                "probability": 0.0131582
+            },
+            {
+                "word": "tomorrow",
+                "probability": 0.0127233
+            },
+            {
+                "word": "able",
+                "probability": 0.0127233
+            },
+            {
+                "word": "monday",
+                "probability": 0.0120708
+            }
+        ]
+    },
+    {
+        "index": 28,
+        "p(z)": 0.0454899,
+        "interpretation": "Communicating through technology",
+        "words": [
+            {
+                "word": "year",
+                "probability": 0.015335
+            },
+            {
+                "word": "hour",
+                "probability": 0.0149756
+            },
+            {
+                "word": "email",
+                "probability": 0.0131187
+            },
+            {
+                "word": "ago",
+                "probability": 0.00928507
+            },
+            {
+                "word": "say",
+                "probability": 0.00922517
+            },
+            {
+                "word": "someone",
+                "probability": 0.00916527
+            },
+            {
+                "word": "everyone",
+                "probability": 0.00904547
+            },
+            {
+                "word": "read",
+                "probability": 0.00850637
+            },
+            {
+                "word": "long",
+                "probability": 0.00838657
+            },
+            {
+                "word": "sent",
+                "probability": 0.00808708
+            }
+        ]
+    },
+    {
+        "index": 20,
+        "p(z)": 0.021245,
+        "interpretation": "Discussion of getting together over food",
+        "words": [
+            {
+                "word": "super",
+                "probability": 0.0166497
+            },
+            {
+                "word": "food",
+                "probability": 0.0140884
+            },
+            {
+                "word": "coffee",
+                "probability": 0.0119113
+            },
+            {
+                "word": "place",
+                "probability": 0.0116552
+            },
+            {
+                "word": "uber",
+                "probability": 0.0113991
+            },
+            {
+                "word": "cool",
+                "probability": 0.00960615
+            },
+            {
+                "word": "shit",
+                "probability": 0.00896582
+            },
+            {
+                "word": "expensive",
+                "probability": 0.00858163
+            },
+            {
+                "word": "guy",
+                "probability": 0.00845356
+            },
+            {
+                "word": "look",
+                "probability": 0.00819744
+            }
+        ]
+    },
+    {
+        "index": 32,
+        "p(z)": 0.0140965,
+        "interpretation": "Talking about food and recreational activities",
+        "words": [
+            {
+                "word": "fish",
+                "probability": 0.0223589
+            },
+            {
+                "word": "cream",
+                "probability": 0.0192752
+            },
+            {
+                "word": "gonna",
+                "probability": 0.0181188
+            },
+            {
+                "word": "ice",
+                "probability": 0.0171551
+            },
+            {
+                "word": "sleep",
+                "probability": 0.0148423
+            },
+            {
+                "word": "watch",
+                "probability": 0.0125295
+            },
+            {
+                "word": "take",
+                "probability": 0.0121441
+            },
+            {
+                "word": "business",
+                "probability": 0.0115659
+            },
+            {
+                "word": "hour",
+                "probability": 0.0113731
+            },
+            {
+                "word": "asleep",
+                "probability": 0.0113731
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "p(z)": 0.0829186,
+        "interpretation": "hellos, goodbyes, good nights",
+        "words": [
+            {
+                "word": "gonna",
+                "probability": 0.0159148
+            },
+            {
+                "word": "work",
+                "probability": 0.0124952
+            },
+            {
+                "word": "tomorrow",
+                "probability": 0.0113772
+            },
+            {
+                "word": "hey",
+                "probability": 0.0103579
+            },
+            {
+                "word": "talk",
+                "probability": 0.0101935
+            },
+            {
+                "word": "night",
+                "probability": 0.00976604
+            },
+            {
+                "word": "take",
+                "probability": 0.00960163
+            },
+            {
+                "word": "need",
+                "probability": 0.00904265
+            },
+            {
+                "word": "well",
+                "probability": 0.00838503
+            },
+            {
+                "word": "sure",
+                "probability": 0.00835215
+            }
+        ]
+    },
+    {
+        "index": 30,
+        "p(z)": 0.0526548,
+        "interpretation": "Exchanging support when talking about our days",
+        "words": [
+            {
+                "word": "talk",
+                "probability": 0.0168738
+            },
+            {
+                "word": "anything",
+                "probability": 0.0143893
+            },
+            {
+                "word": "work",
+                "probability": 0.0128366
+            },
+            {
+                "word": "need",
+                "probability": 0.0125778
+            },
+            {
+                "word": "let",
+                "probability": 0.012112
+            },
+            {
+                "word": "better",
+                "probability": 0.0117497
+            },
+            {
+                "word": "day",
+                "probability": 0.0106627
+            },
+            {
+                "word": "help",
+                "probability": 0.00967934
+            },
+            {
+                "word": "ever",
+                "probability": 0.00942054
+            },
+            {
+                "word": "someone",
+                "probability": 0.0082301
+            }
+        ]
+    },
+    {
+        "index": 25,
+        "p(z)": 0.0359895,
+        "interpretation": "Excitement about my summer internships",
+        "words": [
+            {
+                "word": "company",
+                "probability": 0.0715237
+            },
+            {
+                "word": "offer",
+                "probability": 0.062063
+            },
+            {
+                "word": "interview",
+                "probability": 0.0596411
+            },
+            {
+                "word": "deadline",
+                "probability": 0.0412494
+            },
+            {
+                "word": "apple",
+                "probability": 0.022328
+            },
+            {
+                "word": "extension",
+                "probability": 0.0193006
+            },
+            {
+                "word": "excited",
+                "probability": 0.0180896
+            },
+            {
+                "word": "interviewing",
+                "probability": 0.0161975
+            },
+            {
+                "word": "phone",
+                "probability": 0.0146081
+            },
+            {
+                "word": "january",
+                "probability": 0.0139269
+            }
+        ]
+    },
+    {
+        "index": 34,
+        "p(z)": 0.0314821,
+        "interpretation": "Writing emails to companies for internship opportunities",
+        "words": [
+            {
+                "word": "interview",
+                "probability": 0.0717103
+            },
+            {
+                "word": "opportunity",
+                "probability": 0.0563131
+            },
+            {
+                "word": "summer",
+                "probability": 0.0412619
+            },
+            {
+                "word": "week",
+                "probability": 0.0342553
+            },
+            {
+                "word": "google",
+                "probability": 0.0280272
+            },
+            {
+                "word": "able",
+                "probability": 0.0249132
+            },
+            {
+                "word": "next",
+                "probability": 0.0204151
+            },
+            {
+                "word": "best",
+                "probability": 0.0180796
+            },
+            {
+                "word": "internship",
+                "probability": 0.0174741
+            },
+            {
+                "word": "offer",
+                "probability": 0.0174741
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "p(z)": 0.0172287,
+        "interpretation": "Teresa's stress about passing her college classes",
+        "words": [
+            {
+                "word": "class",
+                "probability": 0.0665994
+            },
+            {
+                "word": "grade",
+                "probability": 0.0495554
+            },
+            {
+                "word": "responsibility",
+                "probability": 0.0389818
+            },
+            {
+                "word": "late",
+                "probability": 0.0381928
+            },
+            {
+                "word": "anxious",
+                "probability": 0.0381928
+            },
+            {
+                "word": "failing",
+                "probability": 0.0321958
+            },
+            {
+                "word": "point",
+                "probability": 0.0307755
+            },
+            {
+                "word": "prepared",
+                "probability": 0.0306177
+            },
+            {
+                "word": "assignment",
+                "probability": 0.0287239
+            },
+            {
+                "word": "hard",
+                "probability": 0.026041
+            }
+        ]
+    },
+    {
+        "index": 24,
+        "p(z)": 0.0169559,
+        "interpretation": "Anger towards my academic environment",
+        "words": [
+            {
+                "word": "little",
+                "probability": 0.0222896
+            },
+            {
+                "word": "fucking",
+                "probability": 0.0200448
+            },
+            {
+                "word": "school",
+                "probability": 0.0194034
+            },
+            {
+                "word": "shit",
+                "probability": 0.0176396
+            },
+            {
+                "word": "kid",
+                "probability": 0.0171586
+            },
+            {
+                "word": "education",
+                "probability": 0.0155551
+            },
+            {
+                "word": "teacher",
+                "probability": 0.0149137
+            },
+            {
+                "word": "fuck",
+                "probability": 0.0147534
+            },
+            {
+                "word": "parent",
+                "probability": 0.013631
+            },
+            {
+                "word": "entire",
+                "probability": 0.0129896
+            }
+        ]
+    },
+    {
+        "index": 23,
+        "p(z)": 0.0262217,
+        "interpretation": "Describing how I felt being a freshman and a woman at an engineering college",
+        "words": [
+            {
+                "word": "woman",
+                "probability": 0.0343637
+            },
+            {
+                "word": "student",
+                "probability": 0.0262662
+            },
+            {
+                "word": "college",
+                "probability": 0.0257471
+            },
+            {
+                "word": "school",
+                "probability": 0.0198297
+            },
+            {
+                "word": "mudd",
+                "probability": 0.0188953
+            },
+            {
+                "word": "men",
+                "probability": 0.0167152
+            },
+            {
+                "word": "quality",
+                "probability": 0.0155733
+            },
+            {
+                "word": "great",
+                "probability": 0.0144313
+            },
+            {
+                "word": "academically",
+                "probability": 0.0139122
+            },
+            {
+                "word": "science",
+                "probability": 0.0124588
+            }
+        ]
+    },
+    {
+        "index": 33,
+        "p(z)": 0.02662,
+        "interpretation": "Discussion of affirmative action and marginalized groups in collegiate academic settings",
+        "words": [
+            {
+                "word": "college",
+                "probability": 0.0216812
+            },
+            {
+                "word": "system",
+                "probability": 0.0214766
+            },
+            {
+                "word": "action",
+                "probability": 0.0202494
+            },
+            {
+                "word": "say",
+                "probability": 0.0179996
+            },
+            {
+                "word": "word",
+                "probability": 0.0145226
+            },
+            {
+                "word": "affirmative",
+                "probability": 0.0143181
+            },
+            {
+                "word": "problem",
+                "probability": 0.0132954
+            },
+            {
+                "word": "use",
+                "probability": 0.0124773
+            },
+            {
+                "word": "mean",
+                "probability": 0.0124773
+            },
+            {
+                "word": "current",
+                "probability": 0.0122728
+            }
+        ]
+    },
+    {
+        "index": 35,
+        "p(z)": 0.0315312,
+        "interpretation": "Discussion of race and intersectionality in tech",
+        "words": [
+            {
+                "word": "white",
+                "probability": 0.0145105
+            },
+            {
+                "word": "around",
+                "probability": 0.0133877
+            },
+            {
+                "word": "school",
+                "probability": 0.012524
+            },
+            {
+                "word": "tech",
+                "probability": 0.0116604
+            },
+            {
+                "word": "female",
+                "probability": 0.011574
+            },
+            {
+                "word": "woman",
+                "probability": 0.0103649
+            },
+            {
+                "word": "different",
+                "probability": 0.0101058
+            },
+            {
+                "word": "black",
+                "probability": 0.0100194
+            },
+            {
+                "word": "friend",
+                "probability": 0.00855116
+            },
+            {
+                "word": "little",
+                "probability": 0.00829206
+            }
+        ]
+    },
+    {
+        "index": 15,
+        "p(z)": 0.0117609,
+        "interpretation": "Asking questions, discussing physical appearance",
+        "words": [
+            {
+                "word": "ask",
+                "probability": 0.0339316
+            },
+            {
+                "word": "totally",
+                "probability": 0.0272381
+            },
+            {
+                "word": "possible",
+                "probability": 0.0270073
+            },
+            {
+                "word": "might",
+                "probability": 0.0230835
+            },
+            {
+                "word": "question",
+                "probability": 0.0226218
+            },
+            {
+                "word": "tone",
+                "probability": 0.021237
+            },
+            {
+                "word": "look",
+                "probability": 0.0205445
+            },
+            {
+                "word": "cancel",
+                "probability": 0.0205445
+            },
+            {
+                "word": "skin",
+                "probability": 0.0198521
+            },
+            {
+                "word": "big",
+                "probability": 0.0196213
+            }
+        ]
+    },
+    {
+        "index": 17,
+        "p(z)": 0.0466413,
+        "interpretation": "Discussing our opinions and how we felt",
+        "words": [
+            {
+                "word": "say",
+                "probability": 0.0192802
+            },
+            {
+                "word": "feeling",
+                "probability": 0.0147232
+            },
+            {
+                "word": "might",
+                "probability": 0.0136716
+            },
+            {
+                "word": "question",
+                "probability": 0.0135547
+            },
+            {
+                "word": "idea",
+                "probability": 0.013321
+            },
+            {
+                "word": "thought",
+                "probability": 0.0121526
+            },
+            {
+                "word": "opinion",
+                "probability": 0.0113347
+            },
+            {
+                "word": "saying",
+                "probability": 0.0113347
+            },
+            {
+                "word": "talk",
+                "probability": 0.00958196
+            },
+            {
+                "word": "never",
+                "probability": 0.00928984
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "p(z)": 0.0159354,
+        "interpretation": "Family's influence on the future",
+        "words": [
+            {
+                "word": "parent",
+                "probability": 0.0320697
+            },
+            {
+                "word": "stack",
+                "probability": 0.0266113
+            },
+            {
+                "word": "interested",
+                "probability": 0.0262702
+            },
+            {
+                "word": "college",
+                "probability": 0.0228587
+            },
+            {
+                "word": "next",
+                "probability": 0.0214941
+            },
+            {
+                "word": "open",
+                "probability": 0.0174003
+            },
+            {
+                "word": "tip",
+                "probability": 0.0153534
+            },
+            {
+                "word": "major",
+                "probability": 0.0148417
+            },
+            {
+                "word": "best",
+                "probability": 0.0141594
+            },
+            {
+                "word": "year",
+                "probability": 0.0133065
+            }
+        ]
+    },
+    {
+        "index": 27,
+        "p(z)": 0.0517598,
+        "interpretation": "Contemplating our relationships",
+        "words": [
+            {
+                "word": "work",
+                "probability": 0.0137954
+            },
+            {
+                "word": "made",
+                "probability": 0.0104257
+            },
+            {
+                "word": "sure",
+                "probability": 0.00931998
+            },
+            {
+                "word": "sense",
+                "probability": 0.00826693
+            },
+            {
+                "word": "life",
+                "probability": 0.00663471
+            },
+            {
+                "word": "everyone",
+                "probability": 0.00658206
+            },
+            {
+                "word": "great",
+                "probability": 0.00621349
+            },
+            {
+                "word": "look",
+                "probability": 0.00621349
+            },
+            {
+                "word": "done",
+                "probability": 0.00610819
+            },
+            {
+                "word": "seems",
+                "probability": 0.00605554
+            }
+        ]
+    }
+]
