@@ -1,5 +1,5 @@
 ---
-theme: dashboard
+theme: ["air", "midnight"]
 title: Analyzing my text messages with my ex-boyfriend
 
 ---
@@ -19,7 +19,7 @@ const lastMonthOfRelationship = new Date(2016, 9);
 
 <p>&nbsp;</p>
 
-## Message Frequency
+## Message frequency
 We began dating in the summer of 2015 and broke up in the spring of 2016.
 
 <div class="grid grid-cols-4">
@@ -87,7 +87,8 @@ function sentimentPlot(data, { width } = {}) {
         {
           x: "timestamp",
           y: "compound_score",
-          negativeFill: "red",
+          positiveFill: "#3dc06c",
+          negativeFill: "#D3212C"
         }
       )))
     ]
@@ -96,7 +97,7 @@ function sentimentPlot(data, { width } = {}) {
 ```
 <p>&nbsp;</p>
 
-## Sentiment Analysis
+## Sentiment analysis
 
 Sentiment analysis is the process of computationally identifying and categorizing the emotions expressed in a piece of text as positive, negative, or neutral. 
 [NLTK's VADER tools](https://www.nltk.org/_modules/nltk/sentiment/vader.html) were run on every message that contained text. The following graphs represent the [compound score](https://github.com/cjhutto/vaderSentiment?tab=readme-ov-file#about-the-scoring) over time.
@@ -125,7 +126,7 @@ Sentiment analysis is the process of computationally identifying and categorizin
 
 <p>&nbsp;</p>
 
-## Longest Messages
+## Longest messages
 
 These were the longest messages we ever sent to each other. 
 
@@ -135,7 +136,7 @@ In a way I hoped this would be something spicy like a long, drawn-out argument. 
 <div class="grid grid-cols-2">
   <div class="card">
     <h2>Longest message from Teresa</h2>
-    <i>These seem to be warnings from terminal output due to issues in my Homebrew configuration. <br /><br /></i>
+    <i>These are warnings from terminal output due to issues in my Homebrew configuration. <br /><br /></i>
     <pre style="height: 80ex; overflow-y: scroll;">${longestMessages["Teresa Ibarra"]}</pre>
   </div>
   <div class="card">
@@ -147,7 +148,7 @@ In a way I hoped this would be something spicy like a long, drawn-out argument. 
 
 <p>&nbsp;</p>
 
-## Key Words
+## Key words
 
 The following graphs represent how often we sent specific words to each other.
 
@@ -334,6 +335,6 @@ When I was training the topic model, some words occurred so frequently that it w
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-This project was coded and visualized by [Teresa Ibarra](https://teresaibarra.com/).
+This project was created by [Teresa Ibarra](https://teresaibarra.com/).
 <script async defer src="https://www.recurse-scout.com/loader.js?t=cebb8f1aa2412719dcf855f950ab254c"></script>
 <div class="rc-scout"></div>
