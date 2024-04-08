@@ -303,6 +303,9 @@ I used [NLTK's VADER tools](https://www.nltk.org/_modules/nltk/sentiment/vader.h
 #### Q: How did you get the topics?
 I trained a [Biterm topic model](https://github.com/xiaohuiyan/BTM) on all of my text messages and had it identify the most likely topic for each message. You can see how I trained and ran the model [here](https://github.com/teresaibarra/texts/tree/main/models/btm_files).
 
+#### Q: How did you do the visualizations?
+I used [Observable Plot](https://observablehq.com/plot/) to make the charts. This site was generated with [Observable Framework](https://observablehq.com/framework/). You can find my code for the visualizations [here](https://github.com/teresaibarra/texts/blob/main/docs/index.md?plain=1).
+
 #### Q: What was it like to show your friends this?
 One friend in particular was surprised by the data and how it didn't align with their perception of the relationship.
 
