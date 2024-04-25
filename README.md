@@ -1,9 +1,3 @@
-# Text Analysis
+# ***WIP***: Analyzing my text messages with my ex-boyfriend
 
-To start the local preview server, run:
-
-```
-npm run dev
-```
-
-Then visit <http://localhost:3000> to preview your project.
+See it live [here](https://teresaibarra.com/texts).
