@@ -1,7 +1,22 @@
 .DS_Store
+.venv
+
 dist/
-docs/.observablehq/cache/
-docs/real_data
 node_modules/
-models/data
+
+**/private_data/*
+!**/private_data/
+
+**/model_input/*
+!**/model_input/
+
+**/model_output/*
+!**/model_output/
+
+docs/.observablehq/
+
+# temporarily hide public data during testing process
+# **/public_data/*
+# !**/public_data/
+
 to-do.md

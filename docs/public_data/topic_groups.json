@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Programming",
+        "description": "I learned how to program shortly before we met and he was already an accomplished programmer. We got to know each other more when we worked together on a hackathon project. I often asked him for help on my programming projects.",
+        "topics": [
+            3,
+            16
+        ]
+    },
+    {
+        "title": "Communication",
+        "description": "We were both living in San Francisco when we got together. I moved to Los Angeles for college in September 2015. We were on and off until July 2016.",
+        "topics": [
+            14,
+            28
+        ]
+    },
+    {
+        "title": "Fun",
+        "description": "We often planned dates, discussed restaurants, and the recreational activities we had happen that day.",
+        "topics": [
+            20,
+            32
+        ]
+    },
+    {
+        "title": "Relationship",
+        "description": "We cared for each other and tried our best to make time for each other.",
+        "topics": [
+            1,
+            30
+        ]
+    },
+    {
+        "title": "Work",
+        "description": "We often talked about his job. The model identified his day-to-day responsibilities and how my ex would talk about them. Publishing these topics would make him identifiable, so I've chosen not to include them.",
+        "topics": []
+    },
+    {
+        "title": "Internships",
+        "description": "Every summer before and during college I worked a software engineering internship. I discussed the process of navigating and landing these internships with him. He was supportive every step of the way.",
+        "topics": [
+            25,
+            34
+        ]
+    },
+    {
+        "title": "Stress",
+        "description": "I struggled with health issues through high school and college. We often vented to each other.",
+        "topics": [
+            2,
+            24
+        ]
+    },
+    {
+        "title": "Marginalized identity",
+        "description": "During this time, I was active in space focused on social justice & advocacy. We often disagreed on the validity of these sentiments. I often vented about how I struggled with being a woman of color in tech and attending a predominantly white institution.",
+        "topics": [
+            23,
+            33,
+            35
+        ]
+    },
+    {
+        "title": "Self",
+        "description": "We were teenagers. We would discuss the way we saw ourselves and the development of our identities.",
+        "topics": [
+            15,
+            17
+        ]
+    },
+    {
+        "title": "The outside world",
+        "description": "We sought and contemplated our relationships to friends, family, and colleagues. We were young and our lives were ahead of us.",
+        "topics": [
+            11,
+            27
+        ]
+    }
+]

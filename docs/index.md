@@ -7,11 +7,10 @@ title: Analyzing my text messages with my ex-boyfriend
 # Analyzing my text messages with my ex-boyfriend
 
 ```js
-const derivedAllMessages = FileAttachment("data/derived_all_messages.json").json();
-const derivedMessages = FileAttachment("data/derived_messages_with_topics.json").json();
-const topicGroups = FileAttachment("data/topic_groups.json").json();
-const labelledTopics = FileAttachment("data/topics.json").json();
-const longestMessages = FileAttachment("data/longest_messages.json").json();
+const derivedMessages = FileAttachment("public_data/derived_messages.json").json();
+const topicGroups = FileAttachment("public_data/topic_groups.json").json();
+const labelledTopics = FileAttachment("public_data/topics.json").json();
+const longestMessages = FileAttachment("public_data/longest_messages.json").json();
 
 const lastMonthOfRelationship = new Date(2016, 9);
 ```
@@ -25,11 +24,11 @@ We began dating in the summer of 2015 and broke up in the spring of 2016.
 <div class="grid grid-cols-4">
   <div class="card">
     <h2>Total messages from Teresa</h2>
-    <span class="big">${derivedAllMessages.filter((d) => d.sender === "Teresa Ibarra").length}</span>
+    <span class="big">${derivedMessages.filter((d) => d.sender === "Teresa Ibarra").length}</span>
   </div>
   <div class="card">
     <h2>Total messages from my ex</h2>
-    <span class="big">${derivedAllMessages.filter((d) => d.sender === "My ex").length}</span>
+    <span class="big">${derivedMessages.filter((d) => d.sender === "My ex").length}</span>
   </div>
 </div>
 
@@ -60,7 +59,7 @@ function messageFrequencyPlot(data, { width } = {}) {
 
 <div class="grid grid-cols-1">
   <div class="card">
-    ${resize((width) => messageFrequencyPlot(derivedAllMessages, {width}))}
+    ${resize((width) => messageFrequencyPlot(derivedMessages, {width}))}
   </div>
 </div>
 
@@ -105,14 +104,14 @@ Sentiment analysis is the process of computationally identifying and categorizin
 <div class="grid grid-cols-1">
   <div class="card">
   <h2>Combined messages</h2>
-    ${resize((width) => sentimentPlot(derivedAllMessages, {width}))}
+    ${resize((width) => sentimentPlot(derivedMessages, {width}))}
   </div>
 </div>
 
 <div class="grid grid-cols-1">
   <div class="card">
   <h2>Teresa's messages</h2>
-    ${resize((width) => sentimentPlot(derivedAllMessages.filter((m) => m.sender === "Teresa Ibarra"), {width}))}
+    ${resize((width) => sentimentPlot(derivedMessages.filter((m) => m.sender === "Teresa Ibarra"), {width}))}
   </div>
 </div>
 
@@ -120,7 +119,7 @@ Sentiment analysis is the process of computationally identifying and categorizin
 <div class="grid grid-cols-1">
   <div class="card">
   <h2>His messages</h2>
-    ${resize((width) => sentimentPlot(derivedAllMessages.filter((m) => m.sender === "My ex"), {width}))}
+    ${resize((width) => sentimentPlot(derivedMessages.filter((m) => m.sender === "My ex"), {width}))}
   </div>
 </div>
 
@@ -178,20 +177,20 @@ function keywordPlot(data, { width } = {}, title) {
 
 <div class="grid grid-cols-1">
   <div class="card">
-    ${resize((width) => keywordPlot(derivedAllMessages.filter(message => message.keywords.includes("pet_name")), {width}, "Messages containing our pet names for each other"))}
+    ${resize((width) => keywordPlot(derivedMessages.filter(message => message.keywords.includes("pet_name")), {width}, "Messages containing our pet names for each other"))}
   </div>
 </div>
 
 <div class="grid grid-cols-1">
   <div class="card">
-    ${resize((width) => keywordPlot(derivedAllMessages.filter(message => message.keywords.includes("love")), {width}, 'Messages containing the word "love"'))}
+    ${resize((width) => keywordPlot(derivedMessages.filter(message => message.keywords.includes("love")), {width}, 'Messages containing the word "love"'))}
   </div>
 </div>
 
 
 <div class="grid grid-cols-1">
   <div class="card">
-    ${resize((width) => keywordPlot(derivedAllMessages.filter(message => message.keywords.includes("sorry")), {width}, 'Messages containing the word "sorry"'))}
+    ${resize((width) => keywordPlot(derivedMessages.filter(message => message.keywords.includes("sorry")), {width}, 'Messages containing the word "sorry"'))}
   </div>
 </div>
 

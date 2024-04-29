@@ -1,0 +1,36 @@
+{
+    "participants": [
+        {
+            "name": "Ex's Name"
+        },
+        {
+            "name": "Teresa Ibarra"
+        }
+    ],
+    "messages": [
+        {
+            "sender_name": "Teresa Ibarra",
+            "timestamp_ms": 1600912030032,
+            "content": "This is an example message.",
+            "is_geoblocked_for_viewer": false
+        },
+        {
+            "sender_name": "Teresa Ibarra",
+            "timestamp_ms": 1600912021254,
+            "content": "The only important structure is that messages are in a list under the 'messages' key. We need a 'sender_name', 'timestamp_ms', and 'content' keys for any text content.",
+            "is_geoblocked_for_viewer": false
+        },
+        {
+            "sender_name": "Teresa Ibarra",
+            "timestamp_ms": 1600912019936,
+            "content": "We don't use the list under the 'participants' key. For this iteration of the script, we don't care for any other metadata like 'is_geoblocked_for_viewer'.",
+            "is_geoblocked_for_viewer": false
+        },
+        {
+            "sender_name": "Teresa Ibarra",
+            "timestamp_ms": 1600912017299,
+            "content": "The 'timestamp_ms' field is a UNIX timestamp in milliseconds.",
+            "is_geoblocked_for_viewer": false
+        }
+    ]
+}
