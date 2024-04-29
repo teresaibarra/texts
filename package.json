@@ -9,8 +9,7 @@
     "observable": "observable"
   },
   "dependencies": {
-    "@observablehq/framework": "latest",
-    "nltk": "^0.0.1"
+    "@observablehq/framework": "latest"
   },
   "engines": {
     "node": ">=20.6"
