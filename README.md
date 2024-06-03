@@ -1,4 +1,4 @@
-# Analyzing text messages with my ex-boyfriend
+# Analyzing a relationship's text messages
 
 This project aims to visualize emotional and thematic trends and provide insight about personal relationship dynamics. This code can be used as a exploration tool for navigating the nuance of digital communication and understanding the biases that can emerge from machine learning analysis.
 
