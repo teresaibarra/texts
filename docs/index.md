@@ -324,7 +324,7 @@ that's art babey!!
 I can't say I recommend it -- it was surreal and uncomfortable to read through messages from a decade ago. Programmatic analysis can reveal things about yourself, your partner, and your relationship that you may not want to know or accept. It's also easy to intentionally or unintentionally manipulate data to favor a narrative.
 
 #### Q: Can you release this so that people could do this themselves?
-I'm considering it. However, the topic model is custom to my data and would not transfer accurately to anyone else's texts. 
+Sure! You can fiddle with the scripts [here](https://github.com/teresaibarra/texts). The topic model is custom to your data so you would need to train it yourself. I'd love to hear how this went for you.
 
 #### Q: Was this cathartic?
 Not in the way I expected. I wanted to complete this project for a long time and I've told people about it for years. I felt bad that I was never able to do it. Dedicating time to work on this at [Recurse Center](https://www.recurse.com/) released me from that shame.
@@ -340,3 +340,4 @@ When I was training the topic model, some words occurred so frequently that it w
 This project was created by [Teresa Ibarra](https://teresaibarra.com/).
 <script async defer src="https://www.recurse-scout.com/loader.js?t=cebb8f1aa2412719dcf855f950ab254c"></script>
 <div class="rc-scout"></div>
+<script defer data-domain="teresaibarra.com/texts" src="https://plausible.io/js/script.js"></script>
