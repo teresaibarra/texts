@@ -340,4 +340,4 @@ When I was training the topic model, some words occurred so frequently that it w
 This project was created by [Teresa Ibarra](https://teresaibarra.com/).
 <script async defer src="https://www.recurse-scout.com/loader.js?t=cebb8f1aa2412719dcf855f950ab254c"></script>
 <div class="rc-scout"></div>
-<script defer data-domain="teresaibarra.com/texts" src="https://plausible.io/js/script.js"></script>
+<script defer data-domain="teresaibarra.com/texts" src="https://plausible.teresaibarra.com/js/script.js"></script>
